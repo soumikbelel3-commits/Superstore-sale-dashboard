@@ -1,202 +1,268 @@
-📊 Superstore Sales Analysis – End-to-End Data Analytics Project
+# 🛒 Superstore Sales Analytics — End-to-End Data Analyst Project
+
 
-Replace with actual dashboard screenshot
+> **Industry:** Retail &nbsp;|&nbsp; **Domain:** Sales Analytics &nbsp;|&nbsp; **Period:** 2015–2018 &nbsp;|&nbsp; **Records:** 9,800 &nbsp;|&nbsp; **Revenue Analysed:** $2.26M
 
-📋 Project Overview
-This comprehensive data analytics project analyzes 4 years of sales data (2015–2018) for a national retail chain operating across the United States. The dataset contains over 9,900 transactions, $2.3M in revenue, and spans three product categories: Furniture, Office Supplies, and Technology. The goal was to uncover growth opportunities, optimize profitability, and provide strategic recommendations to increase revenue by 15% while maintaining healthy margins.
+---
 
-The project follows a structured end-to-end analytics workflow:
+## 📌 Project Overview
 
-1.Business Understanding
+A full end-to-end Data Analyst project built on the **Global Superstore** dataset. This project covers every stage of the analytics lifecycle — from raw data ingestion and cleaning to SQL querying, statistical analysis, EDA visualisations, Power BI dashboard design, and boardroom-ready strategic recommendations.
+
+The analysis uncovers **$460,000/year in actionable revenue opportunities** and identifies key profit leakage points across product categories and US regions.
+
+---
+
+## 🗂️ Table of Contents
 
-2.Data Cleaning & Feature Engineering (Python)
-
-3.Exploratory Data Analysis (Python)
-
-4.SQL Business Analysis
-
-5.Statistical Insights
-
-6.Power BI Dashboard Design
-
-7.Strategic Recommendations
-
-🎯 Business Problem
-"Identify growth opportunities and profitability drivers across products, regions, and customer segments to increase revenue by 15% while maintaining 20% profit margins."
-
-Stakeholders:
-
-CEO, CFO, VP of Sales, Regional Sales Managers, Marketing Director, Supply Chain Manager
-
-Financial Motivation:
-
-$2.3M in sales with varying profitability
-
-Regional disparities suggest untapped potential
-
-Seasonal patterns can optimize inventory & marketing spend
-
-Shipping efficiency impacts customer satisfaction and costs
-
-📁 Dataset
-The dataset is a CSV export from a retail superstore, containing 9,994 rows and 21 columns.
-
-Column	Description
-Row ID	Unique transaction ID
-Order ID	Unique order identifier
-Order Date	Date order placed
-Ship Date	Date order shipped
-Ship Mode	Shipping method (4 categories)
-Customer ID	Unique customer ID
-Customer Name	Customer full name
-Segment	Customer segment (Consumer/Corporate/Home Office)
-Country	All USA
-City, State, Postal Code, Region	Geographic details
-Product ID, Category, Sub-Category, Product Name	Product details
-Sales	Transaction amount ($)
-Key Metrics:
-
-Total Revenue: $2,297,201
-
-Total Orders: 5,009
-
-Total Customers: 793
-
-Avg Order Value: $458.66
-
-Time Period: 2015–2018
-
-🔍 Methodology
-Step 1: Business Understanding
-Defined industry (retail), stakeholders, business objectives, and financial importance.
-
-Step 2: Data Cleaning & Feature Engineering (Python)
-Handled missing postal codes (11 rows)
-
-Removed duplicates
-
-Converted date columns
-
-Detected and capped outliers (top 1% of sales)
-
-Engineered 15+ features:
-
-Year, Month, Quarter, DayOfWeek
-
-Shipping_Days, Is_Delayed
-
-Order_Value, Items_Per_Order
-
-Customer_Tenure_Days, Is_Repeat
-
-Price_Tier (Low/Medium/High/Premium/Luxury)
-
-Step 3: Exploratory Data Analysis (Python)
-Univariate, bivariate, and time-series analysis
-
-Correlation matrix
-
-Key visualizations:
-
-Sales distribution
-
-Revenue by category, segment, region
-
-Monthly/quarterly trends
-
-Top states and products
-
-Shipping mode analysis
-
-Step 4: SQL Business Analysis
-12 advanced SQL queries using:
-
-Window functions (RANK, LAG, RUNNING TOTAL)
-
-CTEs
-
-RFM segmentation
-
-YoY growth calculations
-
-Customer lifetime value by segment
-
-Step 5: Statistical Insights
-Hypothesis testing (t-tests, ANOVA)
-
-95% confidence intervals
-
-Significant findings:
-
-Corporate customers spend 22% more than Consumers (p < 0.001)
-
-West region outperforms Central by 31% (p < 0.01)
-
-Q4 sales are 45% higher than Q1 (p < 0.001)
-
-Step 6: Power BI Dashboard Design
-Three-page interactive dashboard:
-
-Executive Summary – KPI cards, monthly trend, top products, revenue map
-
-Sales Performance – region matrix, category breakdown, shipping analysis, slicers
-
-Customer Insights – segmentation, repeat vs new, top customers, RFM scatter plot
-
-DAX Measures: Total Revenue, Total Orders, Avg Order Value, YTD Growth, On-Time Delivery %, Customer Lifetime Value, Repeat Customer Rate, etc.
-
-Step 7: Business Insights & Recommendations
-Identified what's working (Technology, Corporate, West region, Q4)
-
-Pinpointed money leaks (Central region, Tables/Bookcases, First Class delays)
-
-Delivered short-term and long-term strategic actions with financial impact modeling
-
-Estimated $1.2M cumulative revenue growth over 2 years at 335% ROI
-
-💡 Key Insights
-Area	Insight
-Revenue Growth	34% growth from 2015 to 2018; Q4 contributes 35% of annual revenue
-Product Performance	Technology leads with 36% of revenue; Phones, Chairs, Storage are top sub-categories
-Customer Segments	Consumers (51% revenue), Corporate (30%), Home Office (19%) – Corporate has highest AOV
-Geographic	West region dominates (32%); California alone = 20% of total sales
-Shipping	Standard Class most popular (59%); avg delivery 4 days; First Class delays risk satisfaction
-Repeat Customers	83% of revenue from repeat buyers – strong loyalty
-Underperformers	Central region lags by 18% in AOV; Tables & Bookcases have low margins
-📈 Strategic Recommendations
-Short-Term (0–3 Months)
-Fix First Class shipping delays – renegotiate carriers, adjust promised dates
-
-Launch Central region intervention (dedicated manager, targeted campaign)
-
-Implement Corporate loyalty program (tiered discounts, account managers)
-
-Set minimum order value ($25) to reduce low-value transactions
-
-Medium-Term (3–12 Months)
-Home Office growth initiative (remote work bundles, influencer marketing)
-
-Expand Technology category (accessories, bundles, seasonal promos)
-
-Replicate West region best practices in Central/East
-
-Optimize inventory (reduce slow-moving furniture, increase tech for Q4)
-
-Financial Impact
-Year 1: +$502K revenue
-
-Year 2: +$706K revenue
-
-Cumulative 2 years: +$1.208M
-
-ROI: 335% (payback in 3.6 months)
-
-🛠️ Technologies Used
-Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy) – data cleaning, EDA, statistics
-
-SQL – advanced querying, window functions, CTEs
-
-Power BI – interactive dashboards, DAX measures
-
-Git / GitHub – version control and project sharing
-
+- [Business Scenario](#-business-scenario)
+- [Dataset](#-dataset)
+- [Project Structure](#-project-structure)
+- [Tech Stack](#-tech-stack)
+- [Key Findings](#-key-findings)
+- [Steps Covered](#-steps-covered)
+- [Visualisations](#-visualisations)
+- [SQL Queries](#-sql-queries)
+- [Power BI Dashboard](#-power-bi-dashboard)
+- [Strategic Recommendations](#-strategic-recommendations)
+- [How to Run](#-how-to-run)
+- [Resume Bullets](#-resume-bullets)
+
+---
+
+## 🏢 Business Scenario
+
+**GlobalMart Inc.** is a US-based retail chain selling across three product categories — Furniture, Office Supplies, and Technology — to Consumer, Corporate, and Home Office customer segments across four US regions.
+
+**Objective:** Identify revenue drivers, underperforming segments, and profit leakage points to drive a 15%+ profitability improvement in FY2019.
+
+**Stakeholders:** VP Sales, CFO, Head of Supply Chain, Marketing Director, Product Management
+
+---
+
+## 📊 Dataset
+
+| Property | Detail |
+|---|---|
+| Source | Global Superstore (Kaggle) |
+| File | `train.csv` |
+| Rows | 9,800 |
+| Columns | 18 |
+| Date Range | January 2015 – December 2018 |
+| Geography | United States (4 Regions, 49 States) |
+
+**Key columns:** `Order ID`, `Order Date`, `Ship Date`, `Ship Mode`, `Customer ID`, `Segment`, `Region`, `Category`, `Sub-Category`, `Sales`
+
+---
+
+## 📁 Project Structure
+
+```
+superstore-sales-analytics/
+│
+├── data/
+│   └── train.csv                   # Raw dataset
+│
+├── notebooks/
+│   └── superstore_eda.ipynb        # Full EDA notebook
+│
+├── sql/
+│   └── business_queries.sql        # 10 production SQL queries
+│
+├── visuals/
+│   ├── chart1_monthly_trend.png
+│   ├── chart2_category_rev.png
+│   ├── chart3_region.png
+│   ├── chart4_segment.png
+│   ├── chart5_subcategory.png
+│   ├── chart6_yearly_growth.png
+│   └── chart7_heatmap.png
+│
+├── report/
+│   └── superstore_da_project.docx  # Full professional report (11 steps)
+│
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Purpose |
+|---|---|
+| **Python 3.10+** | Data cleaning, EDA, feature engineering |
+| **Pandas & NumPy** | Data manipulation and transformation |
+| **Matplotlib & Seaborn** | Statistical visualisations |
+| **MySQL / SQL** | Business queries, window functions, CTAs |
+| **Power BI** | Interactive dashboard design |
+| **DAX** | Calculated measures and KPIs |
+
+---
+
+## 💡 Key Findings
+
+| Finding | Impact |
+|---|---|
+| 📈 **20.3% YoY Revenue Growth** (2017→2018) | Business momentum is accelerating |
+| 💻 **Technology = 18% margin** vs Furniture = 6% | Furniture is the biggest profit drag |
+| 🌍 **West region outperforms all others** | Central region significantly underperforms |
+| 🏢 **Top 20% customers = ~80% of revenue** | Classic Pareto — CLV management critical |
+| 📦 **123 bulk-order outlier transactions** | Untapped corporate account opportunity |
+| 📅 **Q4 is the strongest revenue quarter** | Seasonal campaign timing opportunity |
+
+---
+
+## 📋 Steps Covered
+
+| Step | Topic |
+|---|---|
+| 1 | Business Understanding — scenario, stakeholders, financial context |
+| 2 | Dataset Overview — column dictionary, KPI identification |
+| 3 | Business Questions — 15 descriptive, diagnostic, and predictive questions |
+| 4 | Data Cleaning — missing values, type fixing, feature engineering, outlier detection |
+| 5 | EDA — 7 visualisations with business narrative |
+| 6 | SQL Analysis — 10 queries with CTEs, window functions, running totals |
+| 7 | Statistical Insights — CV, Pareto, hypothesis testing, seasonality |
+| 8 | Power BI Design — 3-page dashboard, 8 DAX measures, calculated columns |
+| 9 | Business Insights — what's working, failing, and leaking |
+| 10 | Strategic Recommendations — short/medium-term actions, $460K impact estimate |
+| 11 | Resume Bullet Points — 6 ATS-optimised bullets |
+
+---
+
+## 📈 Visualisations
+
+| Chart | Insight |
+|---|---|
+| Monthly Revenue Trend | Clear Q4 seasonality; consistent YoY growth |
+| Revenue by Category | Technology leads; Furniture high revenue, low margin |
+| Region Performance | West dominates; Central significantly underperforms |
+| Customer Segment Share | Consumers 51%, Corporate 30%, Home Office 19% |
+| Top 10 Sub-Categories | Phones and Chairs are top revenue drivers |
+| Annual YoY Growth | Acceleration to 20.3% in 2018 |
+| Category × Region Heatmap | Technology concentrated in West/East |
+
+---
+
+## 🗃️ SQL Queries
+
+Ten production-grade queries covering:
+
+- ✅ Annual revenue summary with AOV (`GROUP BY`, `COUNT DISTINCT`)
+- ✅ Category profit analysis (inline `CASE` margin logic)
+- ✅ Regional ranking (`DENSE_RANK`, `OVER`)
+- ✅ Top 10 customers by CLV (`CTE` + window function)
+- ✅ Month-over-month growth (`LAG`)
+- ✅ Cumulative running total (`ROWS BETWEEN UNBOUNDED PRECEDING`)
+- ✅ Category × Region matrix (`RANK PARTITION BY`)
+- ✅ Customer Lifetime Value with tenure (`DATEDIFF`, `MIN/MAX`)
+- ✅ YoY regional growth (`LEAD/LAG PARTITION BY Region`)
+- ✅ Shipping mode performance analysis
+
+---
+
+## 📊 Power BI Dashboard
+
+**3-page dashboard design:**
+
+**Page 1 — Executive Summary**
+- KPI cards: Revenue, Orders, Customers, AOV, YoY Growth %
+- Monthly trend line chart
+- Top 5 customers bar chart
+- Revenue by category donut
+
+**Page 2 — Sales & Operations**
+- US filled map (state-level revenue)
+- Sub-category revenue with margin overlay
+- Category × Region matrix (conditional formatting)
+- Slicers: Year, Region, Category, Segment
+
+**Page 3 — Customer Intelligence**
+- Segment revenue by year (stacked bar)
+- Repeat vs new customers
+- Top 20 CLV customer table
+- New vs returning customer trend
+
+**Key DAX Measures:**
+```dax
+Total Revenue    = SUM(superstore[Sales])
+Total Orders     = DISTINCTCOUNT(superstore[Order ID])
+AOV              = DIVIDE([Total Revenue], [Total Orders])
+YoY Growth %     = DIVIDE([CY Rev] - [PY Rev], [PY Rev])
+Est Profit       = SUMX(superstore, superstore[Sales] * [Margin Rate])
+Repeat Customers = CALCULATE(DISTINCTCOUNT([Customer ID]), [Order Count] >= 2)
+```
+
+---
+
+## ⚙️ How to Run
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/yourusername/superstore-sales-analytics.git
+cd superstore-sales-analytics
+```
+
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**3. Run the EDA notebook**
+```bash
+jupyter notebook notebooks/superstore_eda.ipynb
+```
+
+**4. Run SQL queries**
+```bash
+# Import train.csv into MySQL as 'superstore' table, then:
+mysql -u root -p your_db < sql/business_queries.sql
+```
+
+**`requirements.txt`**
+```
+pandas>=1.5.0
+numpy>=1.23.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+jupyter>=1.0.0
+```
+
+---
+
+## 🎯 Strategic Recommendations
+
+| Initiative | Est. Revenue Impact | Timeframe |
+|---|---|---|
+| Corporate Loyalty Program (top 100 CLV customers) | +$120,000/yr | 0–3 months |
+| Central Region Sales Coverage Fix | +$80,000/yr | 0–3 months |
+| Furniture Margin Audit (Tables/Bookcases) | +$30,000 profit | 0–3 months |
+| Technology Category Expansion | +$180,000/yr | 3–12 months |
+| Q4 Campaign Optimisation | +$50,000/yr | 3–6 months |
+| **Total Estimated Impact** | **+$460,000/yr** | |
+
+---
+
+## 📝 Resume Bullets
+
+> Copy-paste ready for your CV or LinkedIn
+
+- Conducted end-to-end sales analysis on 9,800 retail transactions ($2.26M revenue) using Python (Pandas, Seaborn, Matplotlib), uncovering 20.3% YoY growth opportunity and $44K in annual Furniture margin leakage
+- Engineered 6 new analytical features including estimated profit, ship days, and outlier flags; identified 123 high-value bulk-order transactions representing untapped corporate account management revenue
+- Wrote 10 production-grade SQL queries using CTEs, window functions (LAG, LEAD, RANK, DENSE_RANK), and running totals to answer stakeholder questions on CLV, regional growth, and shipping performance
+- Designed a 3-page Power BI dashboard with 8 custom DAX measures enabling C-level executives to monitor KPIs and drill down by region, category, and customer segment
+- Delivered 5 strategic recommendations with estimated $460,000/yr financial impact, including a Corporate Loyalty Program and Central Region sales coverage intervention
+- Applied statistical analysis (CV, Pareto 80/20, hypothesis testing) to validate business assumptions and provide confidence-weighted investment recommendations to senior leadership
+
+---
+
+## 📬 Contact
+
+**Author:** [Your Name]  
+**LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
+**Email:** your.email@example.com
+
+---
+
+*⭐ If you found this project useful, please star the repository!*
